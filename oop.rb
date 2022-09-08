@@ -4,23 +4,23 @@
 # it should have a method called "say" that returns whatever string
 #is passed in, with "*~*" at the beginning and end of the string
 
-# class Unicorn
-#   def initialize(name)
-#     @name = name
-#     @color = "silver"
-#   end
-#
-#   def say
-#     puts "*~* My name is #{@name}, and I am the happiest unicorn there is! *~*"
-#   end
-# end
-#
-# unicorn1 = Unicorn.new("Carla")
-# p unicorn1
-#
-# unicorn2 = Unicorn.new("Gina")
-# p unicorn2
-# p unicorn2.say
+class Unicorn
+  def initialize(name)
+    @name = name
+    @color = "silver"
+  end
+
+  def say
+    puts "*~* My name is #{@name}, and I am the happiest unicorn there is! *~*"
+  end
+end
+
+unicorn1 = Unicorn.new("Carla")
+p unicorn1
+
+unicorn2 = Unicorn.new("Gina")
+p unicorn2
+p unicorn2.say
 
 #<Unicorn:0x00007f79fc18eac0 @name="Carla", @color="silver">
 #<Unicorn:0x00007f79fc18e7f0 @name="Gina", @color="silver">
@@ -32,34 +32,34 @@
 #  it should have a thirsty attribute, that is true by default
 #  it should have a drink method. When called, the thirsty attribute changes to false
 # #
-# class Vampire
-#   def initialize(name)
-#     @name = name
-#     @pet = "bat"
-#     @thirsty = true
-#   end
-#
-#   def change_pet(new_pet)
-#     @pet = new_pet
-#   end
-#
-#   def drink
-#     @thirsty = false
-#   end
-# end
-#
-# vampire1 = Vampire.new("Edward")
-# p vampire1
-#
-# vampire2 = Vampire.new("Sally")
-# p vampire2
-# vampire2.change_pet("dog")
-# p vampire2
-#
-# vampire3 = Vampire.new("Gregory")
-# p vampire3
-# vampire3.drink
-# p vampire3
+class Vampire
+  def initialize(name)
+    @name = name
+    @pet = "bat"
+    @thirsty = true
+  end
+
+  def change_pet(new_pet)
+    @pet = new_pet
+  end
+
+  def drink
+    @thirsty = false
+  end
+end
+
+vampire1 = Vampire.new("Edward")
+p vampire1
+
+vampire2 = Vampire.new("Sally")
+p vampire2
+vampire2.change_pet("dog")
+p vampire2
+
+vampire3 = Vampire.new("Gregory")
+p vampire3
+vampire3.drink
+p vampire3
 
 # #<Vampire:0x00007fbea3180768 @name="Edward", @pet="bat", @thirsty=true>
 #<Vampire:0x00007fbea31801f0 @name="Sally", @pet="bat", @thirsty=true>
@@ -74,28 +74,28 @@
 #  it should have a is_hungry attribute that is true by default
 #  it should have a eat method. If the dragon eats 4 times, it is no longer hungry
 
-# class Dragon
-#   def initialize(name, rider, color)
-#     @name = name
-#     @rider = rider
-#     @color = color
-#     @is_hungry = true
-#   end
-#
-#   def eat
-#     @is_hungry = false
-#   end
-# end
-#
-#
-#
-# dragon1 = Dragon.new("George", "Lisa", "red")
-# p dragon1
-#
-# dragon2 = Dragon.new("Sam", "Dave", "blue")
-# p dragon2
-# dragon2.eat
-# p dragon2
+class Dragon
+  def initialize(name, rider, color)
+    @name = name
+    @rider = rider
+    @color = color
+    @is_hungry = true
+  end
+
+  def eat
+    @is_hungry = false
+  end
+end
+
+
+
+dragon1 = Dragon.new("George", "Lisa", "red")
+p dragon1
+
+dragon2 = Dragon.new("Sam", "Dave", "blue")
+p dragon2
+dragon2.eat
+p dragon2
 
 #<Dragon:0x00007fef70984da8 @name="George", @rider="Lisa", @color="red", @is_hungry=true>
 #<Dragon:0x00007fef709846a0 @name="Sam", @rider="Dave", @color="blue", @is_hungry=true>
